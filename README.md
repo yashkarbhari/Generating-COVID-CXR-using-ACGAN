@@ -5,4 +5,4 @@ Will add the code with detailed infromation of each folder here.
 
 TO DO:
 1) Add the folders, from the local Jupyter Notebook.
-2) Also show the generated images in thr grid pattern.
+2) Also show the generated images in thr grid pattern..
