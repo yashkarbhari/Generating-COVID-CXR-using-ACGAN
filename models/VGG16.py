@@ -1,8 +1,8 @@
 import os
+import keras
 import tensorflow as tf
 from tensorflow.keras.layers import *
 from tensorflow.keras import Model
-import keras
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 PATH = 'Y:/CovidGAN'
