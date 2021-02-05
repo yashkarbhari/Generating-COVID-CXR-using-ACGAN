@@ -27,3 +27,7 @@ Required Directory Structure:
 
 `generate.py` loads the trained generator weights and generates the CXR image.
 
+We have added 50 synthetic images in `COVID-19 (Synthetic)`. Remaining synthetic images are available on request, mail yashkarbhari17@gmail.com .
+
+
+
