@@ -19,4 +19,11 @@ Required Directory Structure:
 
 ```
 
+`main.py` contains the discriminator, generator, and the acgan function.
+
+`trainer.py` contains the training methodology for the ACGAN, trained for `1200` epochs.
+
+`utils.py` has the label smoothing function, the print logs function, and the function to generate noise and labels.
+
+`generate.py` loads the trained generator weights and generates the CXR image.
 
