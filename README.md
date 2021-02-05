@@ -29,5 +29,9 @@ Required Directory Structure:
 
 We have added 50 synthetic images in `COVID-19 (Synthetic)`. Remaining synthetic images are available on request, mail yashkarbhari17@gmail.com .
 
-
+Training dataset was used from from the following:
+1) https://github.com/ieee8023/covid-chestxray-dataset
+2) https://github.com/agchung/Figure1-COVID-chestxray-dataset
+3) https://github.com/agchung/Actualmed-COVID-chestxray-dataset
+4) https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 
