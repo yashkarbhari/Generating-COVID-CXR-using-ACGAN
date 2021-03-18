@@ -36,8 +36,8 @@ Training dataset was used from from the following:
 
 <table>
   <tr>
-    <td>Covid-19</td>
-     <td>Normal</td>
+    <td>COVID-19 CXR</td>
+     <td>Normal CXR</td>
      
   </tr>
   <tr>
