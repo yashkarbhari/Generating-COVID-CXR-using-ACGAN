@@ -36,9 +36,9 @@ Training dataset was used from from the following:
 
 <table>
   <tr>
-    <td>First Screen Page</td>
-     <td>Holiday Mention</td>
-     <td>Present day in purple and selected day in pink</td>
+    <td>Covid-19</td>
+     <td>Normal</td>
+     
   </tr>
   <tr>
     <td><img src="images/covid_grid.png" width=270 height=480></td>
