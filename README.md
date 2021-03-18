@@ -34,3 +34,4 @@ Training dataset was used from from the following:
 3) https://github.com/agchung/Actualmed-COVID-chestxray-dataset
 4) https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 
+![]()
