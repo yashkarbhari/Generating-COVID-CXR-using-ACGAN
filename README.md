@@ -41,7 +41,7 @@ Training dataset was used from from the following:
      
   </tr>
   <tr>
-    <td><img src="images/covid_grid.png" width=270 height=480></td>
-    <td><img src="images/normal_grid.png" width=270 height=480></td>
+    <td><img src="images/covid_grid.png"></td>
+    <td><img src="images/normal_grid.png"></td>
   </tr>
  </table>
