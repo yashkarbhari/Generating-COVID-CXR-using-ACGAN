@@ -45,3 +45,5 @@ Training dataset was used from the following:
     <td><img src="images/normal_grid.png"></td>
   </tr>
  </table>
+
+![](images/acgan.png)
