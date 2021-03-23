@@ -48,6 +48,6 @@ Training dataset was used from the following:
 
 
 <p align="center">
-  <img src="images/acgan.png" width="700" height="400"/>
+  <img src="images/acgan.png" width="800" height="400"/>
 </p>
 
