@@ -46,4 +46,6 @@ Training dataset was used from the following:
   </tr>
  </table>
 
-<img src="images/acgan.png" width="900" height="400" style="border:5px solid black">
+<div>
+<img src="images/acgan.png" width="900" height="400" style="text-align:center">
+</div>
