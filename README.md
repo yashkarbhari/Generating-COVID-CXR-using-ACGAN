@@ -47,7 +47,7 @@ Training dataset was used from the following:
   </tr>
  </table>
 
-## Model
+## Model structure
 
 <p align="center">
   <img src="images/acgan.png" width="800" height="400"/>
