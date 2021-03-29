@@ -35,6 +35,13 @@ Training dataset was used from the following:
 3) https://github.com/agchung/Actualmed-COVID-chestxray-dataset
 4) https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 
+
+## Model structure
+
+<p align="center">
+  <img src="images/acgan.png" width="800" height="400"/>
+</p>
+
 <table>
   <tr>
     <td>COVID-19 CXR</td>
@@ -47,9 +54,4 @@ Training dataset was used from the following:
   </tr>
  </table>
 
-## Model structure
-
-<p align="center">
-  <img src="images/acgan.png" width="800" height="400"/>
-</p>
 
