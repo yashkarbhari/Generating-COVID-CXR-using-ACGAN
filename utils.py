@@ -28,5 +28,14 @@ def print_logs(metrics_names, train_history, test_history):
     print(ROW_FMT.format('discriminator (test)',
                          *test_history['discriminator'][-1]))
 
+# Function to generate a batch of noise and label 
 
+def generate_batch_noise_and_labels(batch_size, latent_dim):
 
+    # generate a new batch of noise
+    noise = np.random.uniform(-1, 1, (batch_size, latent_dim))
+
+    # sample some labels
+    sampled_labels = np.random.randint(0, 2, batch_size)
+
+    return noise, sampled_labels
