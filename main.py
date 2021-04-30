@@ -17,6 +17,7 @@ from tensorflow.keras.utils import Progbar
 import tensorflow as tf
 print(tf.__version__)
 
+# DISCRIMINATOR
 
 def discriminator(input_shape=(112, 112, 3)):
     #weight initialization
@@ -72,6 +73,8 @@ def discriminator(input_shape=(112, 112, 3)):
 d = discriminator(input_shape=(112, 112, 3))
 d.summary()
 
+# GENERATOR
+
 models = tf.keras.models
 def generator(latent_dim = 100, n_classes = 2):
     init = RandomNormal(mean = 0.0, stddev = 0.02)
@@ -126,3 +129,47 @@ def generator(latent_dim = 100, n_classes = 2):
   
 g = generator(latent_dim = 100, n_classes = 2)
 g.summary()
+
+# Combining the discriminator and generator to build the acgan model
+
+from tensorflow.keras import Model
+
+adam_lr = 0.0002
+adam_beta_1 = 0.5
+
+def define_gan(latent_dim = 100):
+    # build the discriminator
+    dis = discriminator()
+    dis.compile(
+        optimizer=Adam(lr=adam_lr, beta_1=adam_beta_1),
+        loss=['binary_crossentropy', 'sparse_categorical_crossentropy']
+    )
+
+    # build the generator
+    gen = generator(latent_dim)
+    gen.compile(optimizer=Adam(lr=adam_lr, beta_1=adam_beta_1),
+                      loss='binary_crossentropy')
+
+    # Inputs
+    latent = Input(shape=(latent_dim, ), name='latent_noise')
+    image_class = Input(shape=(1,), name='image_class')
+    print(image_class.dtype)
+    # Get a fake image
+    fake_img = gen([latent, image_class])
+    print('fake image: ', fake_img.shape)
+    # Only train generator in combined model
+    dis.trainable = False
+    fake, aux = dis(fake_img)
+    combined = models.Model(inputs=[latent, image_class],
+                            outputs=[fake, aux],
+                            name='ACGAN')
+
+    combined.compile(
+        optimizer=Adam(lr=adam_lr, beta_1=adam_beta_1),
+        loss=['binary_crossentropy', 'sparse_categorical_crossentropy']
+    )
+    
+    combined.summary()
+    return combined, dis, gen
+
+gan_model = define_gan(latent_dim=100)
