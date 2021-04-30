@@ -23,7 +23,7 @@ Required Directory Structure:
 
 `trainer.py` contains the training methodology for the ACGAN, trained for `1200` epochs.
 
-`utils.py` has the label smoothing function, the print logs function, and the function to generate noise and labels.
+`utils.py` has the label smoothing function, the print logs function, the function to generate noise and labels, and the function to plot the loss graph.
 
 `generate.py` loads the trained generator weights and generates the CXR image.
 
