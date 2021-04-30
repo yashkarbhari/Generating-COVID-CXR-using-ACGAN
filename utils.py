@@ -39,3 +39,23 @@ def generate_batch_noise_and_labels(batch_size, latent_dim):
     sampled_labels = np.random.randint(0, 2, batch_size)
 
     return noise, sampled_labels
+
+# Function to generate the loss graph using the saved weights
+
+import pandas as pd
+path = 'Y:/CovidGAN/acgan_history.pkl'
+path.encode('utf-8').strip()
+hist = pickle.load(open(path, 'rb'))
+
+for p in ['train', 'test']:
+    for g in ['discriminator', 'generator']:
+        hist[p][g] = pd.DataFrame(hist[p][g], columns=['loss', 'generation_loss', 'auxiliary_loss'])
+        plt.plot(hist[p][g]['generation_loss'], label='{} ({})'.format(g, p))
+
+# get the NE and show as an equilibrium point
+plt.hlines(-np.log(0.5), 0, hist[p][g]['generation_loss'].shape[0], label='Nash Equilibrium')
+plt.legend()
+plt.title(r'$L_s$ (generation loss) per Epoch')
+plt.xlabel('Epoch')
+plt.ylabel(r'$L_s$')
+plt.show()
