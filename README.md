@@ -1,6 +1,6 @@
 # Generation of Synthetic Chest X-Ray Images and Detection of COVID-19: a Deep Learning based Approach
 
-This is the official implementation of the paper Generation of Synthetic Chest X-Ray Images and Detection of COVID-19: a Deep Learning based Approach. 
+This is the official implementation of the paper [Generation of Synthetic Chest X-Ray Images and Detection of COVID-19: a Deep Learning based Approach.](https://www.mdpi.com/2075-4418/11/5/895) 
 
 `loader.py` contains the loading requirements for the dataset.
 
