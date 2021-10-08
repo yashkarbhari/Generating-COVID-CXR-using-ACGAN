@@ -57,4 +57,13 @@ Training dataset was used from the following:
   </tr>
  </table>
 
-
+## Citation
+```
+@Article{diagnostics11050895,
+author = {Karbhari, Yash and Basu, Arpan and Geem, Zong Woo and Han, Gi-Tae and Sarkar, Ram},
+title = {Generation of Synthetic Chest X-ray Images and Detection of COVID-19: A Deep Learning Based Approach},
+journal = {Diagnostics},
+volume = {11},
+year = {2021}
+}
+```
