@@ -64,6 +64,7 @@ author = {Karbhari, Yash and Basu, Arpan and Geem, Zong Woo and Han, Gi-Tae and 
 title = {Generation of Synthetic Chest X-ray Images and Detection of COVID-19: A Deep Learning Based Approach},
 journal = {Diagnostics},
 volume = {11},
-year = {2021}
+year = {2021},
+ARTICLE-NUMBER = {895}
 }
 ```
